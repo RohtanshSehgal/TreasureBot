@@ -53,7 +53,8 @@ def help_command(update, context):
 
 def echo(update, context):
     """Echo the user message."""
-    update.message.reply_text("Uhh! not even close, try again!")
+    link="https://i.imgflip.com/33jouq.jpg"
+    update.message.reply_text(f"Wrong answer!, My advice is\n{link}")
     update.message.reply_text("If you haven't read the instructions use /help")
 
 def checkme(update,context):
@@ -159,3 +160,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
